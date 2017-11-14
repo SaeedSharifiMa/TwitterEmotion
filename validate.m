@@ -21,7 +21,7 @@ function validation_error = validate(classifier, X, X_raw, Y, num_folds)
         
         Y_test_predicted = curr_classifier.predict(X_test, X_test_raw);
         
-        curr_cost = performance_measure(Y_test_predicted, Y_test);
+        curr_cost = performance_measure(Y_test_predicted, Y_test)
         costs(fold_i) = curr_cost;
     end
     
